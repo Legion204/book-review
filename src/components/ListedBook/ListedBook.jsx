@@ -16,9 +16,9 @@ const ListedBook = () => {
                             </div>
                             <hr className='border-t-2 border line' />
                             <div className="flex gap-3">
-                                <p className="badge text-[#328EFF] bg-[#328EFF26] p-3">Category: Classic</p>
-                                <p className="badge text-[#FFAC33] bg-[#FFAC3326] p-3">Rating: 4.5</p>
-                                <p className="badge text-[white] bg-[#23BE0A] p-3">View Details</p>
+                                <p className="badge text-[#328EFF] bg-[#328EFF26] p-4">Category: Classic</p>
+                                <p className="badge text-[#FFAC33] bg-[#FFAC3326] p-4">Rating: 4.5</p>
+                                <button className="badge border-[#23BE0A] text-[#23BE0A] hover:text-[white] hover:bg-[#23BE0A] p-4">View Details</button>
                             </div>
                         </div>
                     </div>

@@ -19,9 +19,9 @@ const NavBar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-lg text-[#131313CC] workSans ">
-                    <NavLink to={'/'}><li><button>Home</button></li></NavLink>
-                    <NavLink to={'/listed'}><li><button>Listed Books</button></li></NavLink>
-                    <li><button>Pages to Read</button></li>
+                    <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/'}><li><p>Home</p></li></NavLink>
+                    <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/listed'}><li><p>Listed Books</p></li></NavLink>
+                    <li><p>Pages to Read</p></li>
                 </ul>
             </div>
             <div className="navbar-end gap-2 workSans">
