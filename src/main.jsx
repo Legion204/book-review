@@ -8,6 +8,7 @@ import {
 import Root from './Layouts/Root';
 import Home from './Pages/Home';
 import BookDetails from './Pages/BookDetails';
+import ListedBooks from './Pages/ListedBooks';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         path:'/book/:id',
         element:<BookDetails></BookDetails>,
         loader:()=>fetch('/Books.json')
+      },
+      {
+        path:'/listed',
+        element:<ListedBooks></ListedBooks>
       }
     ]
   },
