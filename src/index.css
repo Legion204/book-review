@@ -11,3 +11,7 @@
 .playfairDisplay{
   font-family: "Playfair Display", serif;
 }
+
+.line{
+  width:-webkit-fill-available;
+}

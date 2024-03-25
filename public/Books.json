@@ -1,0 +1,98 @@
+[
+    {
+        "book_id": 1,
+        "book_name": "1984",
+        "author": "George Orwell",
+        "book_image": "https://i.postimg.cc/vTYWNmRH/1984.jpg",
+        "review": "George Orwell's dystopian masterpiece presents a chilling vision of a future where individuality is crushed under the boot of a totalitarian regime.",
+        "total_page": 328,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Dystopian",
+            "Political"
+        ],
+        "publisher": "Penguin Books",
+        "year_of_publishing": 1949
+    },
+    {
+        "book_id": 2,
+        "book_name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "book_image": "https://i.postimg.cc/3Ntg5H7j/to-Kill-AMockingbird.jpg",
+        "review": "Harper Lee's timeless novel explores themes of racial injustice and moral growth in the American South during the 1930s.",
+        "total_page": 324,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": [
+            "Coming of Age",
+            "Southern Gothic"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "year_of_publishing": 1960
+    },
+    {
+        "book_id": 3,
+        "book_name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "book_image": "https://i.postimg.cc/9FfdPztL/the-Great-Gatsby.jpg",
+        "review": "F. Scott Fitzgerald's classic novel offers a portrait of the Jazz Age and a critique of the American Dream through the story of the enigmatic Jay Gatsby.",
+        "total_page": 180,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Tragedy"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "year_of_publishing": 1925
+    },
+    {
+        "book_id": 4,
+        "book_name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "book_image": "https://i.postimg.cc/ryjGt5Wd/the-Catcher-In-The-Rye.jpg",
+        "review": "J.D. Salinger's iconic novel captures the angst and alienation of adolescence through the rebellious and disillusioned Holden Caulfield.",
+        "total_page": 224,
+        "rating": 4.1,
+        "category": "Fiction",
+        "tags": [
+            "Existentialism",
+            "Cultural Critique"
+        ],
+        "publisher": "Little, Brown and Company",
+        "year_of_publishing": 1951
+    },
+    {
+        "book_id": 5,
+        "book_name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "book_image": "https://i.postimg.cc/yYrFLBLs/pride-And-Prejudice.jpg",
+        "review": "Jane Austen's beloved novel explores themes of love, class, and marriage in Regency-era England through the spirited Elizabeth Bennet and the enigmatic Mr. Darcy.",
+        "total_page": 279,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Satire"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "year_of_publishing": 1813
+    },
+    {
+        "book_id": 6,
+        "book_name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "book_image": "https://i.postimg.cc/fRnbzrLY/the-Lord-Of-The-Rings2.jpg",
+        "review": "J.R.R. Tolkien's epic fantasy trilogy follows the journey of the hobbit Frodo Baggins as he seeks to destroy the One Ring and save Middle-earth from the dark lord Sauron.",
+        "total_page": 1178,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Epic",
+            "Adventure"
+        ],
+        "publisher": "Allen & Unwin",
+        "year_of_publishing": 1954
+    }
+]
