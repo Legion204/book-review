@@ -1,8 +1,10 @@
+import BarChartComponent from "../components/BarChartComponent/BarChartComponent";
+
 
 const PagesToRead = () => {
     return (
         <div>
-            <h1>charts</h1>
+            <BarChartComponent></BarChartComponent>
         </div>
     );
 };
