@@ -21,7 +21,7 @@ const NavBar = () => {
                 <ul className="menu menu-horizontal px-1 text-lg text-[#131313CC] workSans ">
                     <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/'}><li><p>Home</p></li></NavLink>
                     <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/listed'}><li><p>Listed Books</p></li></NavLink>
-                    <li><p>Pages to Read</p></li>
+                    <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/chart'}><li><p>Pages to Read</p></li></NavLink>
                 </ul>
             </div>
             <div className="navbar-end gap-2 workSans">

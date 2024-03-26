@@ -1,9 +1,11 @@
 import { MdOutlineContactPage } from "react-icons/md";
 import { HiOutlineUsers } from "react-icons/hi";
+import { SlCalender } from "react-icons/sl";
 import PropTypes from 'prop-types';
-const ListedReadBook = ({read}) => {
+import { Link } from "react-router-dom";
+const ListedReadBook = ({ read }) => {
 
-        const{book_name,author,publisher,total_page,category,rating,book_image}=read;
+    const { book_name, author, publisher, total_page, category, rating, book_image, book_id,tags,year_of_publishing } = read;
 
     return (
         <div className="flex flex-col py-6 sm:flex-row sm:justify-between border-2 rounded-2xl p-6">
@@ -14,6 +16,16 @@ const ListedReadBook = ({read}) => {
                         <div className="space-y-3">
                             <h1 className="text-4xl font-bold playfairDisplay">{book_name}</h1>
                             <p className='font-medium workSans my-4 text-[#131313CC]'>By: {author}</p>
+                            <div className='flex gap-2 font-medium items-center text-[#23BE0A] workSans my-4'>
+                                <p className="text-[#131313] font-bold">Tags:</p>
+                                {
+                                    tags.map((tag, idx) => <p
+                                        className='bg-[#23BE0A0D] rounded-3xl text-center px-4 py-2'
+                                        key={idx}
+                                    >{tag}</p>)
+                                }
+                                <p className="font-normal text-[#131313CC] flex gap-2 items-center"><SlCalender /> Year of Publishing: {year_of_publishing}</p>
+                            </div>
                             <div className="flex gap-4">
                                 <h4 className="text-[#131313B2]"><div className="flex gap-2 items-center"><HiOutlineUsers /><p>Publisher: {publisher}</p></div></h4>
                                 <h4 className="text-[#131313B2]"><div className="flex gap-2 items-center"><MdOutlineContactPage /><p>Number of Pages: {total_page}</p></div></h4>
@@ -22,7 +34,7 @@ const ListedReadBook = ({read}) => {
                             <div className="flex gap-3">
                                 <p className="badge text-[#328EFF] bg-[#328EFF26] p-4">Category: {category}</p>
                                 <p className="badge text-[#FFAC33] bg-[#FFAC3326] p-4">Rating: {rating}</p>
-                                <button className="badge border-[#23BE0A] text-[#23BE0A] hover:text-[white] hover:bg-[#23BE0A] p-4">View Details</button>
+                                <Link to={`/book/${book_id}`} className="badge border-[#23BE0A] text-[#23BE0A] hover:text-[white] hover:bg-[#23BE0A] p-4">View Details</Link>
                             </div>
                         </div>
                     </div>
@@ -32,8 +44,8 @@ const ListedReadBook = ({read}) => {
     );
 };
 
-ListedReadBook.propTypes={
-    read:PropTypes.object
+ListedReadBook.propTypes = {
+    read: PropTypes.object
 }
 
 export default ListedReadBook;
