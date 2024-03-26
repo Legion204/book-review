@@ -13,7 +13,7 @@ const BooksReads = () => {
     return (
         <div className="flex flex-col gap-6">
             {
-                reads.map((read,idx)=><ListedReadBook
+                reads?.map((read,idx)=><ListedReadBook
                 key={idx}
                 read={read}
                 ></ListedReadBook>)

@@ -13,7 +13,7 @@ const BooksWishlists = () => {
     return (
         <div className="flex flex-col gap-6">
             {
-                wishlists.map((wishlist, idx) => <ListedWishlistBook
+                wishlists?.map((wishlist, idx) => <ListedWishlistBook
                     key={idx}
                     wishlist={wishlist}
                 ></ListedWishlistBook>)

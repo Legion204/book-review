@@ -12,29 +12,37 @@ const BookDetails = () => {
     // LocalStorage functions
 
     const handleRead = () => {
-        const saveBookData = JSON.parse(localStorage.getItem("reads")) || [];
-        const doWEHaveBookData = saveBookData.find((book) => book.book_id === bookData.book_id);
-        if (doWEHaveBookData) {
+        const readsData = JSON.parse(localStorage.getItem("reads")) || [];
+        const isBookInReads = readsData.find((book) => book.book_id === bookData.book_id);
+        if (isBookInReads) {
             toast.warn('You already read this book!')
         } else {
-            saveBookData.push(bookData);
-            localStorage.setItem("reads", JSON.stringify(saveBookData));
+            readsData.push(bookData);
+            localStorage.setItem("reads", JSON.stringify(readsData));
             toast.success('Book added to read')
         }
 
     };
+    
     const handleWishlist = () => {
-        const saveBookData = JSON.parse(localStorage.getItem("reads")) || JSON.parse(localStorage.getItem("wishlists")) || [];
-        const doWEHaveBookData = saveBookData.find((book) => book.book_id === bookData.book_id);
-        if (doWEHaveBookData) {
-            toast.warn('You already added this book to wishlists!')
-        } else {
-            saveBookData.push(bookData);
-            localStorage.setItem("wishlists", JSON.stringify(saveBookData));
-            toast.success('Book added to wishlists')
-        }
+        const readsData = JSON.parse(localStorage.getItem("reads")) || [];
+        const wishlistsData = JSON.parse(localStorage.getItem("wishlists")) || [];
 
+        const isBookInReads = readsData.find(book => book.book_id === bookData.book_id);
+        if (isBookInReads) {
+            toast.warn('You already read this book!')
+        } else {
+            const isBookInWishlist = wishlistsData.find(book => book.book_id === bookData.book_id);
+            if (isBookInWishlist) {
+                toast.warn('You already added this book to wishlists!')
+            } else {
+                wishlistsData.push(bookData)
+                localStorage.setItem("wishlists", JSON.stringify(wishlistsData))
+                toast.success('Book added to wishlists!')
+            }
+        }
     };
+
 
     const { book_name, book_image, tags, category, author, rating, review, total_page, year_of_publishing, publisher } = bookData;
 
