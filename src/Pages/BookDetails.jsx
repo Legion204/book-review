@@ -13,31 +13,29 @@ const BookDetails = () => {
 
     const handleRead = () => {
         const saveBookData = JSON.parse(localStorage.getItem("reads")) || [];
-        const doWEHaveBookData= saveBookData.find((book)=>book.book_id===bookData.book_id);
-        console.log(doWEHaveBookData);
-        if(!doWEHaveBookData){
-            saveBookData.push(bookData);
-            localStorage.setItem("reads",JSON.stringify(saveBookData));
-            toast.success('Book added to read')
-        }else{
+        const doWEHaveBookData = saveBookData.find((book) => book.book_id === bookData.book_id);
+        if (doWEHaveBookData) {
             toast.warn('You already read this book!')
+        } else {
+            saveBookData.push(bookData);
+            localStorage.setItem("reads", JSON.stringify(saveBookData));
+            toast.success('Book added to read')
         }
 
     };
     const handleWishlist = () => {
-        const saveBookData = JSON.parse(localStorage.getItem("reads","wishlists")) || [];
-        const doWEHaveBookData= saveBookData.find((book)=>book.book_id===bookData.book_id);
-        console.log(doWEHaveBookData);
-        if(!doWEHaveBookData){
-            saveBookData.push(bookData);
-            localStorage.setItem("wishlists",JSON.stringify(saveBookData));
-            toast.success('Book added to wishlists')
-        }else{
+        const saveBookData = JSON.parse(localStorage.getItem("reads")) || JSON.parse(localStorage.getItem("wishlists")) || [];
+        const doWEHaveBookData = saveBookData.find((book) => book.book_id === bookData.book_id);
+        if (doWEHaveBookData) {
             toast.warn('You already added this book to wishlists!')
+        } else {
+            saveBookData.push(bookData);
+            localStorage.setItem("wishlists", JSON.stringify(saveBookData));
+            toast.success('Book added to wishlists')
         }
 
     };
-    
+
     const { book_name, book_image, tags, category, author, rating, review, total_page, year_of_publishing, publisher } = bookData;
 
     return (

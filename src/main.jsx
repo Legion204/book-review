@@ -9,6 +9,9 @@ import Root from './Layouts/Root';
 import Home from './Pages/Home';
 import BookDetails from './Pages/BookDetails';
 import ListedBooks from './Pages/ListedBooks';
+import BooksReads from './components/BooksReads/BooksReads';
+import BooksWishlists from './components/BooksWishlists/BooksWishlists';
+
 
 const router = createBrowserRouter([
   {
@@ -26,8 +29,18 @@ const router = createBrowserRouter([
       },
       {
         path:'/listed',
-        element:<ListedBooks></ListedBooks>
-      }
+        element:<ListedBooks></ListedBooks>,
+        children:[
+          {
+            index:true,
+            element:<BooksReads></BooksReads>
+          },
+          {
+            path:'wishlists',
+            element:<BooksWishlists></BooksWishlists>
+          }
+        ]
+      },
     ]
   },
 ]);
