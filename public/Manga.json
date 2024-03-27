@@ -1,0 +1,81 @@
+[
+    {
+      "book_id": 1,
+      "book_name": "Death Note",
+      "author": "Tsugumi Ohba",
+      "book_image": "https://i.postimg.cc/nVY9f9nq/death-Note.jpg",
+      "review": "Death Note follows the story of Light Yagami, a high school student who gains possession of a supernatural notebook that allows him to kill anyone by writing their name in it. A thrilling battle of wits ensues between Light and the enigmatic detective known only as L.",
+      "total_page": 240,
+      "rating": 4.7,
+      "category": "Manga",
+      "tags": ["Psychological", "Thriller"],
+      "publisher": "Shueisha",
+      "year_of_publishing": 2003
+    },
+    {
+      "book_id": 2,
+      "book_name": "Naruto",
+      "author": "Masashi Kishimoto",
+      "book_image": "https://i.postimg.cc/hP2JfFzj/naruto.jpg",
+      "review": "Naruto follows the journey of Naruto Uzumaki, a young ninja with dreams of becoming the strongest ninja and leader of his village. Filled with action, friendship, and perseverance, Naruto's adventures captivate readers as he strives to overcome obstacles and fulfill his destiny.",
+      "total_page": 700,
+      "rating": 4.5,
+      "category": "Manga",
+      "tags": ["Action", "Ninja"],
+      "publisher": "Shueisha",
+      "year_of_publishing": 1999
+    },
+    {
+      "book_id": 3,
+      "book_name": "One Piece",
+      "author": "Eiichiro Oda",
+      "book_image": "https://i.postimg.cc/mghP9dCS/onePiece.jpg",
+      "review": "One Piece follows the journey of Monkey D. Luffy and his crew of pirates as they search for the legendary One Piece treasure. With its rich world-building, memorable characters, and epic battles, One Piece has become one of the most beloved manga series of all time.",
+      "total_page": 1000,
+      "rating": 4.8,
+      "category": "Manga",
+      "tags": ["Adventure", "Pirates", "Fantasy"],
+      "publisher": "Shueisha",
+      "year_of_publishing": 1997
+    },
+    {
+      "book_id": 4,
+      "book_name": "Attack on Titan",
+      "author": "Hajime Isayama",
+      "book_image": "https://i.postimg.cc/L5RqZ23q/attack-On-Titan.jpg",
+      "review": "Attack on Titan is set in a world where humanity resides within enormous walled cities to protect themselves from the Titans, gigantic humanoid creatures. Eren Yeager and his friends join the military to fight against the Titans and uncover the mysteries of their existence.",
+      "total_page": 139,
+      "rating": 4.6,
+      "category": "Manga",
+      "tags": ["Action", "Horror"],
+      "publisher": "Kodansha",
+      "year_of_publishing": 2009
+    },
+    {
+      "book_id": 5,
+      "book_name": "Fullmetal Alchemist",
+      "author": "Hiromu Arakawa",
+      "book_image": "https://i.postimg.cc/YqrGr2SZ/Fullmetal-Alchemist.jpg",
+      "review": "Fullmetal Alchemist follows the journey of two brothers, Edward and Alphonse Elric, as they search for the Philosopher's Stone to restore their bodies after a failed alchemical experiment. The series explores themes of sacrifice, redemption, and the consequences of seeking forbidden knowledge.",
+      "total_page": 116,
+      "rating": 4.9,
+      "category": "Manga",
+      "tags": ["Adventure", "Alchemy"],
+      "publisher": "Square Enix",
+      "year_of_publishing": 2001
+    },
+    {
+      "book_id": 6,
+      "book_name": "Tokyo Ghoul",
+      "author": "Sui Ishida",
+      "book_image": "https://i.postimg.cc/j2XDHmMM/tokyo-Ghoul.jpg",
+      "review": "Tokyo Ghoul follows Ken Kaneki, a college student who becomes half-ghoul after a chance encounter with one of these flesh-eating creatures. As he grapples with his newfound identity and the conflict between ghouls and humans, Kaneki must navigate a world filled with danger and moral ambiguity.",
+      "total_page": 144,
+      "rating": 4.7,
+      "category": "Manga",
+      "tags": ["Horror", "Psychological"],
+      "publisher": "Shueisha",
+      "year_of_publishing": 2011
+    }
+  ]
+  
