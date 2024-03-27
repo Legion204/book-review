@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
+
 
 const ListedBooks = () => {
 
@@ -10,14 +10,6 @@ const ListedBooks = () => {
         <div className="m-12 ">
             <div className="flex flex-col items-center mb-8">
                 <h1 className="font-bold text-3xl text-center bg-[#1313130D] py-8 px-96 rounded-2xl mb-14">Books</h1>
-                <details className="dropdown">
-                    <summary className="m-1 btn bg-[#23BE0A] text-white">Sort By <IoIosArrowDown /></summary>
-                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                        <li><a>Rating</a></li>
-                        <li><a>Number of pages</a></li>
-                        <li><a>Publisher year</a></li>
-                    </ul>
-                </details>
             </div>
 
             <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800 ">
