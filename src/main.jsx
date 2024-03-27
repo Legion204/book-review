@@ -14,12 +14,14 @@ import BooksWishlists from './components/BooksWishlists/BooksWishlists';
 import PagesToRead from './Pages/PagesToRead';
 import MangaSection from './Pages/MangaSection';
 import Authors from './Pages/Authors';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
