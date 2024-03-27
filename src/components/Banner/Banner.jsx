@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import bannerImage from '../../assets/berserk-fotor-bg-remover-20240325211812.png'
+import bannerImage from '../../assets/pngegg.png'
 
 const Banner = () => {
     return (
