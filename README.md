@@ -1,6 +1,16 @@
-Site name:Aura Library
+**Site name:Aura Library**
 Site type: Online Book store
 Site netlify live link: https://aura-library.netlify.app/
+Features and characteristics:
+ **User-friendly navigation**: The website should have easy-to-use navigation menus allowing users to quickly find books based on categories, genres, authors.
+  
+**Rich book catalog**: A comprehensive book catalog with a wide selection of titles across various genres.
+  
+  **Detailed book information**: Each book listing should provide detailed information such as title, author, synopsis, reviews, ratings, publication details, and formats available.
+  
+ **Sorting of books**: there is a sorting function in listed book section that can sort by ratings,page count and year of publish.
+  
+ **Manga and author section**: this site also have a manga section for and aurthor section you can go to those saction by nav bar.
 
 
 
