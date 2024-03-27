@@ -8,10 +8,8 @@ const ListedBooks = () => {
 
     return (
         <div className="m-12 ">
-            <div className="flex flex-col items-center mb-8">
-                <h1 className="font-bold text-3xl text-center bg-[#1313130D] py-8 px-96 rounded-2xl mb-14">Books</h1>
-            </div>
 
+            <h1 className="font-bold text-3xl text-center bg-[#1313130D] py-4 px-32 md:py-8 md:px-96 rounded-2xl mb-14">Books</h1>
             <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800 ">
 
                 <Link to={''}

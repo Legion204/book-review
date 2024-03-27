@@ -10,14 +10,14 @@ const ListedWishlistBook = ({ wishlist }) => {
 
     return (
         <div className="flex flex-col py-6 sm:flex-row sm:justify-between border-2 rounded-2xl p-6">
-            <div className="flex items-center w-full space-x-2 sm:space-x-4">
-                <img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500" src={book_image} alt="Polaroid camera" />
+            <div className="flex flex-col md:flex-row items-center w-full space-x-2 sm:space-x-4">
+                <img className="flex-shrink-0 object-fill w-30 h-30 md:w-60 h-60 dark:border- rounded outline-none dark:bg-gray-500" src={book_image} alt="Polaroid camera" />
                 <div className="flex flex-col justify-between w-full pb-4">
-                    <div className="flex justify-between w-full pb-2 space-x-2">
+                    <div className="flex flex-col md:flex-row justify-between w-full pb-2 space-x-2">
                         <div className="space-y-3">
-                            <h1 className="text-4xl font-bold playfairDisplay">{book_name}</h1>
-                            <p className='font-medium workSans my-4 text-[#131313CC]'>By: {author}</p>
-                            <div className='flex gap-2 font-medium items-center text-[#23BE0A] workSans my-4'>
+                            <h1 className="text-4xl text-center md:text-left font-bold playfairDisplay">{book_name}</h1>
+                            <p className='font-medium text-center md:text-left workSans my-4 text-[#131313CC]'>By: {author}</p>
+                            <div className='flex flex-col md:flex-row gap-2 font-medium items-center text-[#23BE0A] workSans my-4'>
                                 <p className="text-[#131313] font-bold">Tags:</p>
                                 {
                                     tags.map((tag, idx) => <p

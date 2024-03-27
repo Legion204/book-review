@@ -3,7 +3,7 @@ import bannerImage from '../../assets/berserk-fotor-bg-remover-20240325211812.pn
 
 const Banner = () => {
     return (
-        <section className="bg-[#8264640d] dark:text-gray-800 m-12 rounded-xl">
+        <section className="bg-[#8264640d] dark:text-gray-800 m-4 md:m-12 rounded-xl">
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around">
                 <div className="flex flex-col justify-around p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left gap-5">
                     <h1 className="text-6xl font-bold leading-none sm:text-6xl playfairDisplay">Books to freshen up your bookshelf</h1>
