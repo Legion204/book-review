@@ -1,6 +1,19 @@
-# React + Vite
+Site name:Aura Library
+Site type: Online Book store
+Site netlify live link: https://aura-library.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+
+
+
+
+
+
+
+
+
+
+
 
 Currently, two official plugins are available:
 
