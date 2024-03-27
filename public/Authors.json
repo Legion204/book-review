@@ -1,0 +1,57 @@
+[
+    {
+      "author_name": "Masashi Kishimoto",
+      "book_name": "Naruto",
+      "occupation": "Mangaka",
+      "author_image": "https://i.postimg.cc/j2yNn8XR/kishimoto.jpg"
+    },
+    {
+      "author_name": "J.K. Rowling",
+      "book_name": "Harry Potter and the Sorcerer's Stone",
+      "occupation": "Author",
+      "author_image": "https://i.postimg.cc/zBbT8DHb/jkr.jpg"
+    },
+    {
+      "author_name": "Eiichiro Oda",
+      "book_name": "One Piece",
+      "occupation": "Mangaka",
+      "author_image": "https://i.postimg.cc/k55xYvny/oda.jpg"
+    },
+    {
+      "author_name": "F. Scott Fitzgerald",
+      "book_name": "The Great Gatsby",
+      "occupation": "Author",
+      "author_image": "https://i.postimg.cc/SK8zvTBC/F-Scott-Fitzgerald-1921.jpg"
+    },
+    {
+      "author_name": "Hirohiko Araki",
+      "book_name": "JoJo's Bizarre Adventure",
+      "occupation": "Mangaka",
+      "author_image": "https://i.postimg.cc/gch37JP1/800px-Hirohiko-Araki.png"
+    },
+    {
+      "author_name": "Stephen King",
+      "book_name": "The Shining",
+      "occupation": "Author",
+      "author_image": "https://i.postimg.cc/XJRdJM92/king.jpg"
+    },
+    {
+      "author_name": "Naoko Takeuchi",
+      "book_name": "Sailor Moon",
+      "occupation": "Mangaka",
+      "author_image": "https://i.postimg.cc/SKtcBYRb/naoko.jpg"
+    },
+    {
+      "author_name": "Jane Austen",
+      "book_name": "Pride and Prejudice",
+      "occupation": "Author",
+      "author_image": "https://i.postimg.cc/vZhrvNdB/jane.jpg"
+    },
+    {
+      "author_name": "Tite Kubo",
+      "book_name": "Bleach",
+      "occupation": "Mangaka",
+      "author_image": "https://i.postimg.cc/02g05Sf8/tite.jpg"
+    }
+  ]
+  

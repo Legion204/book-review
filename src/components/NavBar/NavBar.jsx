@@ -14,6 +14,7 @@ const NavBar = () => {
                         <NavLink to={'/listed'}><li><button>Listed Books</button></li></NavLink>
                         <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]' : ''} to={'/chart'}><li><p>Pages to Read</p></li></NavLink>
                         <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/manga'}><li><p>Manga Section</p></li></NavLink>
+                        <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/authors'}><li><p>Authors</p></li></NavLink>
                     </ul>
                 </div>
                 <NavLink to={'/'}><button className="btn btn-ghost font-bold text-3xl">Aura Library</button></NavLink>
@@ -24,6 +25,7 @@ const NavBar = () => {
                     <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]' : ''} to={'/listed'}><li><p>Listed Books</p></li></NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]' : ''} to={'/chart'}><li><p>Pages to Read</p></li></NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]' : ''} to={'/manga'}><li><p>Manga Section</p></li></NavLink>
+                    <NavLink className={({isActive})=>isActive? 'text-[#23BE0A] border-2 rounded-xl border-[#23BE0A]':''} to={'/authors'}><li><p>Authors</p></li></NavLink>
                 </ul>
             </div>
             <div className="navbar-end gap-2 workSans">

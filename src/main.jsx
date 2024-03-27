@@ -13,6 +13,7 @@ import BooksReads from './components/BooksReads/BooksReads';
 import BooksWishlists from './components/BooksWishlists/BooksWishlists';
 import PagesToRead from './Pages/PagesToRead';
 import MangaSection from './Pages/MangaSection';
+import Authors from './Pages/Authors';
 
 
 const router = createBrowserRouter([
@@ -48,8 +49,12 @@ const router = createBrowserRouter([
         element:<PagesToRead></PagesToRead>
       },
       {
-        path:'manga',
+        path:'/manga',
         element:<MangaSection></MangaSection>
+      },
+      {
+        path:'/authors',
+        element:<Authors></Authors>
       }
     ]
   },
