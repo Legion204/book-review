@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -29,11 +29,11 @@ const BarChartComponent = () => {
     };
 
     return (
-        <div className='w-full h-80 md:w-full md:h-[600px]'>
+        <div className='w-full h-96 md:w-full md:h-[600px]'>
             <ResponsiveContainer>
                 <BarChart
-                    width={1500}
-                    height={600}
+                    width={600}
+                    height={300}
                     data={nameAndPageArray}
                     margin={{
                         top: 20,
@@ -44,6 +44,8 @@ const BarChartComponent = () => {
                 >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="book_name" />
+                    <Tooltip />
+                    <Legend />
                     <YAxis />
                     <Bar dataKey="total_page" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                         {nameAndPageArray?.map((entry, index) => (
